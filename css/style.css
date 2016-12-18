@@ -1,0 +1,276 @@
+@font-face {
+	font-family: 'neon';
+	src: url('../font/neon.ttf') format('truetype');
+}
+
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	background-color: #ECDCC2;
+	background-image: url(../img/invitation-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header,
+main,
+footer,
+section {
+	overflow: hidden;
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+dd {
+	margin: 0;
+}
+
+strong {
+	font-weight: normal;
+}
+
+main {
+	width: 70%;
+	margin: 50px auto;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+.block {
+	overflow: hidden;
+	box-shadow: 0 0 8px #CCC;
+	margin-bottom: 30px;
+}
+
+section {
+	background-color: #FFFFFF;
+	color: #997061;
+	padding: 30px 40px;
+}
+
+.header {
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+
+.invite-title,
+.invite-text {
+	text-align: center;
+}
+
+.invite-title {
+	font-family: 'neon', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	margin-bottom: 0;
+	background-color: #FF656E;
+	color: #F6F9F6;
+}
+
+.invite-title h1 {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.invite-text {
+	position: relative;
+}
+
+.invite-text a,
+.invite-text a:link,
+.invite-text a:active,
+.invite-text a:hover {
+	color: #FF656E;
+}
+
+.invite-text a {
+	position: absolute;
+	z-index: 110;
+	bottom: 10px;
+	right: 10px;
+}}
+
+.invite-text h2 {
+	margin-top: 0;
+	padding-left: 180px;
+}
+
+.invite-text p {
+	padding-left: 180px;
+	line-height: 30px;
+	margin: 0;
+}
+
+.text-icon {
+	position: absolute;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+.invite-position dl{
+	margin: 0;
+}
+
+.position-bailu,
+.position-shida {
+	width: 100%;
+	height: 300px;
+}
+
+.invite-count {
+	position: relative;
+}
+
+.count {
+	font-family: Microsoft Yahei;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.count-bride,
+.count-groom {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	max-width: 120px;
+}
+
+.count-bride {
+	left: 0;
+}
+
+.count-groom {
+	right: 0;
+}
+
+.invite-count b {
+	display: inline-block;
+	text-align: right;
+	font-size: 54px;
+	width: 70px;
+}
+
+.invite-count small {
+	font-size: 18px;
+}
+
+.success-show,
+.success .success-hide {
+	display: none;
+}
+
+.success .success-show {
+	display: block;
+}
+
+.invite-count.success b {
+	width: auto;
+}
+
+.main-image {
+	text-align: center;
+}
+
+.data-button {
+	display: block;
+	height: 80px;
+	margin: 0 25px;
+	line-height: 80px;
+	font-size: 24px;
+	color: #FF656E;
+}
+
+.data-button:hover {
+	background-color: #FFE5EF;
+}
+
+.data-button-bg {
+	font-size: 32px;
+	color: white;
+	background-color: #FF656E;
+}
+
+.data-button-bg:hover {
+	background-color: #FF858E;
+}
+
+a.data-button,
+a.data-button:link,
+a.data-button:active,
+a.data-button:visited {
+	text-decoration: none;
+	text-align: center;
+}
+
+@media all and (min-width: 641px) and (max-width: 960px) {
+	main {
+		width: 80%;
+	}
+
+	section {
+		padding: 30px 15px;
+	}
+
+	.invite-text p {
+		font-size: 14px;
+	}
+
+	.invite-count b {
+		font-size: 48px;
+		width: 60px;
+	}
+}
+
+@media all and (max-width: 641px) {
+	main {
+		width: 90%;
+	}
+
+	section {
+		padding: 30px 5px;
+	}
+
+	.count {
+		padding: 0;
+		padding-bottom: 100px;
+	}
+
+	.invite-text p {
+		font-size: 12px;
+		padding-left: 0px;
+	}
+
+	.invite-count b {
+		font-size: 32px;
+		width: 40px;
+	}
+
+	.text-icon {
+		position: static;
+	}
+
+	.invite-text h2 {
+		padding-left: 0px;
+	}
+
+	.count-bride,
+	.count-groom {
+		width: 28%;
+	}
+
+	.main-image img {
+		width: 100%;
+	}
+}
